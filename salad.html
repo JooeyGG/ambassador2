@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ambassador - Salads</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Restaurant Ambassador Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="take.html">Take N' Bake</a></li>
+
+                <li><a href="pizza.html">Pizza</a></li>
+                <li><a href="pasta.html">Pasta</a></li>
+                <li><a href="sandwiches.html">Sandwiches</a></li>
+                <li><a href="salad.html" class="active">Salads</a></li>
+                <li><a href="appetizer.html">Appetizers</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                
+            </ul>
+
+            <ul class = new-items >
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu2">
+        <div class="category">
+            <h2 class = "section">Salads</h2>
+            <ul>
+                <li><p class = "desc2">A Meal In A Bowl • Please, No Substitutions
+                    Salads can be made with fresh Baby Spinach or Fresh Cut Romaine Lettuce for an additional $2.
+                House Dressings (served on the side): Homemade Ranch, Homemade French, Homemade Italian, Caesar, Blue Cheese, Thousand Island, Balsamic Vinegar, Red Wine Vinegar & Oil, and FF Raspberry Vinaigrette.  
+                </p>
+                </li>
+                <li>
+                    <h3 class = "item">HOUSE SALAD</h3>
+                    <p class = "desc">Fresh Cut Iceberg Lettuce, Tomatoes, Onions, Wisconsin Cheddar Cheese and Croutons.
+                        $4</p>
+                </li>
+                <li>
+                    <h3 class = "item">SIDE CAESAR SALAD</h3>
+                    <p class = "desc">Freshly Chopped Romaine Lettuce, Croutons, Onions, & Tomatoes topped with Shredded Parmesan Cheese & Caesar Dressing. 
+                        Served with Fresh Baked Garlic Toast $5</p>
+                </li>
+                <li>
+                    <h3 class = "item">CAESAR SALAD</h3>
+                    <p class = "desc">Freshly Chopped Romaine Lettuce, Croutons, Onions, & Tomatoes topped with Shredded Parmesan Cheese & Caesar Dressing.
+                        Served with Fresh Baked Garlic Toast
+                        $7
+                        add Garlic Herb Grilled Chicken Breast $2
+                        add Wild Alaskan Salmon $4</p>
+                </li>
+                <li>
+                    <h3 class = "item">CHEF’S SALAD</h3>
+                    <p class = "desc">Fresh Cut Iceberg Lettuce, Lean Premium Deli Ham, Tender Sliced Whole Turkey, Tomatoes, Onions, Hard-boiled Egg, & Wisconsin Cheddar Cheese.
+                        Served with Fresh Baked Garlic Toast & Choice of Dressing.
+                        $8</p>
+                </li>
+                <li>
+                    <h3 class = "item">GARDEN SALAD (Vegetarian)</h3>
+                    <p class = "desc">Fresh Cut Iceberg Lettuce, Tomatoes, Onions, Green Pepper, Black Olives, Hard-boiled Egg, and Wisconsin Cheddar Cheese.  Served with Fresh Baked Garlic Toast and Choice of Dressing.
+                        $7</p>
+                </li>
+                <li>
+                    <h3 class = "item">TACO SALAD</h3>
+                    <p class = "desc">Fresh Cut Iceberg Lettuce topped with our specialty House made Tostada Beef, Wisconsin Cheddar Cheese, Tomatoes, Black Olives and Corn Chips. 
+                        Served with Tostada Hot Sauce, Sour Cream and Salsa.
+                        $8</p>
+                </li>
+                <li>
+                    <h3 class = "item">ITALIAN BEEF VINAIGRETTE</h3>
+                    <p class = "desc">Fresh Cut Iceberg Lettuce with Thinly Shaved Tender Roast Beef, Italian Green Beans, Onions, Tomatoes and Black Olives. Served with Fresh Baked Garlic Toast and Italian Dressing.
+                        $8</p>
+                </li>
+                <li>
+                    <h3 class = "item">ITALIAN TUNA SALAD</h3>
+                    <p class = "desc">Fresh Cut Iceberg Lettuce with chunks or Light Tuna, Onions, Tomatoes, Green Beans, Yellow Wax Beans & Kidney Beans. Served with Fresh Baked Garlic Toast and Italian Dressing.
+                        $8</p>
+                </li>
+                <li>
+                    <h3 class = "item">GREEK SALAD</h3>
+                    <p class = "desc">Fresh Cut Iceberg Lettuce with Onions, Tomatoes, Black Olives, Green Peppers, Marinated Cucumbers and Crumbled Feta Cheese.  Served with Fresh Baked Garlic Toast and Italian Dressing.
+                        $8</p>
+                </li>
+            </ul>
+            <div class="image-container">
+                <img src="images/salad.jpeg" alt="Restaurant Image">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentLocation = window.location.href;
+
+            // Get all navigation links
+            var navLinks = document.querySelectorAll("nav a");
+
+            // Iterate over each link
+            navLinks.forEach(function (link) {
+                if (link.href === currentLocation) {
+                    // If the link's href matches the current URL, add the 'active' class
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

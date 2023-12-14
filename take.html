@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ambassador - About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class = "take-body">
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Restaurant Ambassador Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="take.html">Take N' Bake</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class = "takeBigContainer">
+    <div class="begin">
+        <h1>TAKE N' BAKE PIZZA</h1>
+        <h3>Pizza to Go</h3>
+        <p>Now, you can have our great pizza right from your own oven!</p>
+    </div>
+
+    <div class="takeContainer">
+        <div class="text-section">
+            <h2>Option 1</h2>
+            <p>Order your pizza Half-Baked (to take home and finish later)</p>
+        </div>
+        <div class="text-section2">
+            <h2>Option 2</h2>
+            <p>Place your order for a Half-Baked-Frozen pizza to take home where you can keep it in your freezer
+                (Half-Baked-Frozen requires advanced notice, call 482-5054)</p>
+        </div>
+    </div>
+
+    <div class="after">
+        <p>Cooking Instructions:</p>
+        
+            <p>1. Thaw pizza (if frozen)</p>
+            <p>2. Preheat oven to 375</p>
+            <p>3. Place pizza directly on the oven rack</p>
+            <p>4. Cook 10 to 25 minutes, until center is fully cooked</p>
+        
+    </div>
+
+    <div class="shipping">
+        <p>The Shipping Shop can ship our pizzas to your friends and family!
+            Call them at 906-487-6167 for more information.</p>
+    </div>
+
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var currentLocation = window.location.href;
+
+        // Get all navigation links
+     var navLinks = document.querySelectorAll("nav a");
+
+     // Iterate over each link
+     navLinks.forEach(function (link) {
+         if (link.href === currentLocation) {
+               // If the link's href matches the current URL, add the 'active' class
+             link.classList.add("active");
+         }
+     });
+    });
+</script>
+    
+
+</body>
+
+</html>
