@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ambassador - Pizza</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Restaurant Ambassador Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="take.html">Take N' Bake</a></li>
+                <li><a href="pizza.html" class="active">Pizza</a></li>
+                <li><a href="pasta.html">Pasta</a></li>
+                <li><a href="sandwiches.html">Sandwiches</a></li>
+                <li><a href="salad.html">Salads</a></li>
+                <li><a href="appetizer.html">Appetizers</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+            </ul>
+
+            <ul class = new-items>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu2">
+        <div class="category">
+            <h2 class = "section">Pizza</h2>
+            <ul>
+                <li>
+                    
+                    <p class = "desc2">Every Great Pizza Starts with Our Thin Crisp Crust, House-made for over 50 years!</p>
+                </li>
+                <li>
+                    <h3 class = "item">TOSTADA</h3>
+                    <p class = "desc">Award Winning Tostada Beef layered over House-made Pizza Sauce and Baked with Wisconsin White Colby Cheese, Topped with Freshly Shredded Lettuce, Tomatoes, Wisconsin Cheddar Cheese and House-made Tostada Hot Sauce.
+                        $12/$14/$17</p>
+                </li>
+                <li>
+                    <h3 class = "item">B.L.T. PIZZA</h3>
+                    <p class = "desc">A Generous amount of Smoked Bacon layered over Salad Dressing, Baked with Wisconsin White Colby Cheese.  Topped with Freshly Shredded Lettuce and Tomatoes.
+                        $12/$15/$18</p>
+                </li>
+                <li>
+                    <h3 class = "item">VEGETARIAN PIZZA</h3>
+                    <p class = "desc">Tomatoes, Zucchini, Carrots, Onions, Broccoli, Wisconsin Cheddar & White Colby Cheeses, and Garlic Olive Oil layered over House-made Pizza Sauce
+                        $12/$14/$17</p>
+                </li>
+                <li>
+                    <h3 class = "item">GREEK</h3>
+                    <p class = "desc">Fresh Spinach, Tomatoes, Black & Green Olives, Feta Cheese, Oregano and Garlic Basil Olive Oil layered over Wisconsin White Colby Cheese.
+                        $12/$15/$19</p>
+                </li>
+                <li>
+                    <h3 class = "item">GARLIC CHICKEN PIZZA</h3>
+                    <p class = "desc">Tender Chopped Chicken Breast, Broccoli, Basil, Oregano, Garlic Olive Oil layered over Wisconsin White Colby Cheese.
+                        $14/$16/$19</p>
+                </li>
+                <li>
+                    <h3 class = "item">LOBSTER PIZZA</h3>
+                    <p class = "desc">A Generous amount of Lobster Sensation, Tomatoes, Parsley, Garlic Olive Oil layered over Wisconsin White Colby Cheese. Served with Lemon Wedges.
+                        $15/$19/$23</p>
+                </li>
+                <li>
+                    <h3 class = "item">PESTO PIZZA</h3>
+                    <p class = "desc">A Generous Layer of Basil Pesto topped with Wisconsin Colby Cheese,
+                        Tomatoes, and Feta Cheese.
+                        $11/$14/$17</p>
+                </li>
+                <li>
+                    <h3 class = "item">QUESADILLA PIZZA</h3>
+                    <p class = "desc">Tender Chopped Chicken Breast, Green Peppers, Onions, Bacon and Wisconsin Cheddar Cheese layered over Wisconsin White Colby Cheese and our House-made Spicy Aioli Sauce.
+                        $14/$16/$19</p>
+                </li>
+                <li>
+                    <h3 class = "item">BBQ CHICKEN PIZZA</h3>
+                    <p class = "desc">Tender Chopped Chicken Breast, Banana Peppers, Sliced Red Onions, and Wisconsin White Colby Cheese layered over Tangy Barbecue Sauce, topped with Wisconsin Cheddar Cheese.
+                        $14/$16/$19</p>
+                </li>
+                <li>Build Your Own Ambassador Pizza!</li>
+                <li>
+                    <h3 class = "item">BASIC CHEESE</h3>
+                    <p class = "desc">Made with our Homemade Thin Crisp Crust
+                        $9/$11/$13</p>
+                </li>
+                <li>add ingredients listed below to our basic cheese</li>
+                <li>Sausage, Pepperoni, Ham, Smoked Bacon, Anchovies, or Feta Cheese
+                    $1/$2/$3
+                </li>
+                <li>Shrimp or Marinated Chicken
+                    $3/$4/$5
+                </li>
+                <li>Spinach, Mushrooms, Broccoli, Zucchini, Pineapple, Diced Jalapenos, Black Olives, Green Olives, Tomato, Green Pepper, Onions, Chopped Garlic, or Banana Peppers
+                    $1/$1/$2
+                </li>
+            </ul>
+            <div class="image-container">
+                <img src="images/pizza.jpg" alt="Restaurant Image">
+            </div>
+        </div>
+
+
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentLocation = window.location.href;
+
+            // Get all navigation links
+            var navLinks = document.querySelectorAll("nav a");
+
+            // Iterate over each link
+            navLinks.forEach(function (link) {
+                if (link.href === currentLocation) {
+                    // If the link's href matches the current URL, add the 'active' class
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

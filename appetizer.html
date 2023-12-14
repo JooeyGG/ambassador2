@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ambassador - Appetizers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Restaurant Ambassador Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="take.html">Take N' Bake</a></li>
+                <li><a href="pizza.html">Pizza</a></li>
+                <li><a href="pasta.html">Pasta</a></li>
+                <li><a href="sandwiches.html">Sandwiches</a></li>
+                <li><a href="salad.html">Salads</a></li>
+                <li><a href="appetizer.html" class = "active">Appetizers</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+               
+            </ul>
+
+            <ul class = new-items>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu2">
+        <div class="category">
+            <h2 class = "section">Appetizers</h2>
+            <ul>
+                <li>
+                    <h3 class = "item">NACHOS</h2>
+                    <p class = "desc">Basket of Corn Tortilla Chips with 8oz Hot Nacho Cheese 
+                    $4
+                    </p>
+                </li>
+                <li><p class = "desc2">Homemade Salsa 8oz $1
+                    Sour Cream 4oz $.80
+                    Jalapenos 4oz $.80
+                    Basket of Chips $2
+                </p>
+                </li>
+                <li>
+                    <h3 class = "item">BAKED POTATO SHELLS</h3>
+                    <p class = "desc">Filled with Sautéed Italian Onion Sausage , Wisconsin Cheddar and Parmesan Cheese, Served with Sour Cream.
+                Allow 15 minutes.
+                $6
+                </p>
+                </li>
+                <li>
+                    <h3 class = "item">BAKED CHICKEN WINGS</h3>
+                    <p class = "desc">Spicy Buffalo Hot Sauce
+                    allow 15 minutes
+                    $7
+                    Ranch or Blue Cheese 4oz. $1
+                    </p>
+                </li>
+                <li>
+                    <h3 class = "item">FRESH BAKED GARLIC TOAST BASKET</h3>
+                    <p class = "desc2">
+                    $3
+                    House-made Ranch Dressing $1
+                    Slow Cooked House-made Spaghetti Sauce $2
+                    House-made Pizza Sauce $1
+                    </p>
+                </li>
+                <li>
+                    <h3 class = "item">SAVORY ITALIAN MEATBALLS</h3>
+                    <p class = "desc">topped with Shredded Parmesan Cheese and served with House-made Pizza Sauce
+                    Small (6) $4
+                    Large (10) $7
+                    </p>
+                </li>
+                <li>
+                    <h3 class = "item">BEEF or BEAN TACO</h3>
+                    <p class = "desc">House-made Tostada Beef, Shredded Lettuce, Wisconsin Cheddar Cheese, Diced Tomatoes, and Tostada Hot Sauce.
+                        Hard Corn Tortilla $2
+                        Soft Flour Tortilla $3</p>
+                </li>
+                <li>
+                    <h3 class = "item">BURRITO</h3>
+                    <p class = "desc">Soft Flour Tortilla filled with House-made Refried Beans and Tostada Beef, Wisconsin Cheddar Cheese, Black Olives and Tostada Hot Sauce.
+                        $4
+                        Sour Cream or Nacho Cheese $1</p>
+                </li>
+                <li>
+                    <h3 class = "item">NACHO GRANDE</h3>
+                    <p class = "desc">Our delicious House-made Tostado Beef served on Corn Tortilla Chips and topped with Shredded Cheddar Cheese, Lettuce, Tomato and Black Olives. Served with a side of Hot Nacho Cheese.
+                        $8</p>
+                </li>
+            </ul>
+            <div class="image-container">
+                <img src="images/nacho.jpeg" alt="Restaurant Image">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentLocation = window.location.href;
+
+            // Get all navigation links
+            var navLinks = document.querySelectorAll("nav a");
+
+            // Iterate over each link
+            navLinks.forEach(function (link) {
+                if (link.href === currentLocation) {
+                    // If the link's href matches the current URL, add the 'active' class
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
